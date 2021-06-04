@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./DrumMachine.module.css";
 import Display from "./Display";
+import DrumBoard from "./DrumBoard";
 
 const DrumMachine = (props) => {
   return (
-    <React.Fragment>
-      <div id="drum_machine">
-        <Display />
-      </div>
-    </React.Fragment>
+    <div id="drum-machine" className={styles["drum-machine"]}>
+      <Display />
+      <DrumBoard />
+    </div>
   );
 };
 
