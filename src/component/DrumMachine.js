@@ -6,7 +6,7 @@ import DrumBoard from "./DrumBoard";
 const DrumMachine = (props) => {
   return (
     <div id="drum-machine" className={styles["drum-machine"]}>
-      <Display />
+      <Display description="Lifted State" />
       <DrumBoard />
     </div>
   );

@@ -5,7 +5,7 @@ const Display = (props) => {
   return (
     <React.Fragment>
       <div id="display" className={styles["display"]}>
-        This is the display!
+        {props.description}
       </div>
     </React.Fragment>
   );
