@@ -7,7 +7,7 @@ const DrumBoard = (props) => {
     {
       innerText: "Q",
       audioClipName: "sound1",
-      audioSrc: "urlSource",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
     },
     {
       innerText: "W",
