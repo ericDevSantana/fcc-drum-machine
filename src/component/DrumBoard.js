@@ -6,50 +6,51 @@ const DrumBoard = (props) => {
   const DrumPads = [
     {
       innerText: "Q",
-      audioClipName: "sound1",
+      audioClipName: "Heater-1",
       audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
     },
     {
       innerText: "W",
-      audioClipName: "sound2",
-      audioSrc: "urlSource",
+      audioClipName: "Heater-2",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
     },
     {
       innerText: "E",
-      audioClipName: "sound3",
-      audioSrc: "urlSource",
+      audioClipName: "Heater-3",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3",
     },
     {
       innerText: "A",
-      audioClipName: "sound4",
-      audioSrc: "urlSource",
+      audioClipName: "Heater-4_1",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3",
     },
     {
       innerText: "S",
-      audioClipName: "sound5",
-      audioSrc: "urlSource",
+      audioClipName: "Heater-6",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
     },
     {
       innerText: "D",
-      audioClipName: "sound6",
-      audioSrc: "urlSource",
+      audioClipName: "Dsc_Oh",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
     },
     {
       innerText: "Z",
-      audioClipName: "sound7",
-      audioSrc: "urlSource",
+      audioClipName: "Kick_n_Hat",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
     },
     {
       innerText: "X",
-      audioClipName: "sound8",
-      audioSrc: "urlSource",
+      audioClipName: "RP4_KICK_1",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
     },
     {
       innerText: "C",
-      audioClipName: "sound9",
-      audioSrc: "urlSource",
+      audioClipName: "Cev_H2",
+      audioSrc: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
     },
   ];
+
 
   return (
     <React.Fragment>
@@ -58,9 +59,11 @@ const DrumBoard = (props) => {
           {DrumPads.map((drumPad) => {
             return (
               <DrumPad
+                key={drumPad.innerText}
                 innerText={drumPad.innerText}
                 audioClipName={drumPad.audioClipName}
                 audioSrc={drumPad.audioSrc}
+                onPress={props.onTextChange}
               />
             );
           })}
