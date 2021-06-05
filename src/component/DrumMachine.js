@@ -3,9 +3,9 @@ import styles from "./DrumMachine.module.css";
 import Display from "./Display";
 import DrumBoard from "./DrumBoard";
 
-const DrumMachine = (props) => {
+const DrumMachine = () => {
+  //state to store the audioclip name to pass to Display component and set the new state everytime a drumpad is pressed
   const [displayText, setDisplayText] = useState("");
-
   const audioDescriptionHandler = (text) => {
     setDisplayText(text);
   };

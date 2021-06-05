@@ -51,7 +51,6 @@ const DrumBoard = (props) => {
     },
   ];
 
-
   return (
     <React.Fragment>
       <div className={styles["drum-board"]}>
